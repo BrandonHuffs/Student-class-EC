@@ -17,7 +17,7 @@ public:
     int getId();
     string getName();
     double getScore();
-    void getOutput(Student s);
+    void getOutput();
 
 
     //setters or mutators
@@ -44,7 +44,7 @@ int main(int argc, char const *argv[]) {
     s.setName("Brandon");
     s.setScore(95);
 
-    s.getOutput(s);
+    s.getOutput();
 
 
 
@@ -83,10 +83,10 @@ void Student::setScore(double newScore){ //get the score
 
 }
 
-void Student::getOutput(Student s){   //Output function
-    cout << "Id: " << s.getId() << endl;
-    cout << "Name: " << s.getName() << endl;
-    cout << "Score: " << s.getScore() << endl;
+void Student::getOutput(){   //Output function
+    cout << "Id: " << id << endl;
+    cout << "Name: " << name << endl;
+    cout << "Score: " << score << endl;
 }
 
 
